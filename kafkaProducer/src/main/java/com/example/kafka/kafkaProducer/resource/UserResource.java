@@ -14,7 +14,7 @@ public class UserResource {
     KafkaTemplate<String,String> kafkaTemplate;
 
     private static final String TOPIC="Kafka_Example";
-s
+    
     @GetMapping("/publish/{message}")
     public String post(@PathVariable("message") final String message){
 
